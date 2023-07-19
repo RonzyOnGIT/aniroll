@@ -1,11 +1,15 @@
 import styles from './Hero.module.css';
+import { HeroAnimes } from '../../features/animes/HeroAnimes';
+
 
 export const Hero = () => {
+
+
 
     return (
         <>
             <div className={styles.heroContainer}>
-                <h1>Hero woo</h1>
+                <HeroAnimes />
             </div>
         </>
     )

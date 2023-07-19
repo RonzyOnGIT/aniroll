@@ -1,0 +1,53 @@
+
+.backgroundImage {
+    background-image: url('../../images/backgrounds/hellparadise-min.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 65px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.backgroundImagejjk {
+    background-image: url('../../images/backgrounds/jjkseason2-min.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 65px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.content {
+    color: white;
+    width: 35%;
+}
+
+.content h2 {
+    font-size: 4rem;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.6);
+}
+
+.content p {
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.6);
+}
+
+
+.content button {
+    background-color: var(--red-color);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}

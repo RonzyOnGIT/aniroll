@@ -1,0 +1,10 @@
+.animeDisplayContainer {
+    border: 2px solid black;
+    width: 100%;
+}
+
+
+
+#synopsis {
+    text-overflow: ellipsis;
+}
