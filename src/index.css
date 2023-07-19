@@ -9,3 +9,7 @@ html {
   padding: 0;
   box-sizing: inherit;
 }
+
+body {
+  --red-color: rgb(255, 55, 55);
+}

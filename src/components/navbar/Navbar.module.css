@@ -1,5 +1,55 @@
+#logo {
+    font-size: 2rem;
+}
+
 .navbar {
-    height: 65px;
+    --nav-height: 65px;
+    height: var(--nav-height);
     background-color: rgb(39, 39, 39);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    top: 0;
+
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    flex: 1;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.activeLink {
+    color: var(--red-color);
+}
+
+a:hover {
+    color: var(--red-color);
+    transition: 0.3s;
+}
+
+.userIconContainer {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#userIcon {
+    width: 100%;
+    height: auto;
 }
