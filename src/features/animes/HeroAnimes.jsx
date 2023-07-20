@@ -1,7 +1,5 @@
 import styles from './HeroAnimes.module.css';
 
-import { HeroBackground } from '../../components/heroBackground/HeroBackground';
-
 import { heroData }  from '../../data/heroData';
 import { useState, useEffect } from 'react';
 
