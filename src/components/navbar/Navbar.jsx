@@ -6,6 +6,7 @@ export const Navbar = () => {
     return (
         <>
             <nav className={styles.navbar}>
+                <NavLink to='/'><p id={styles.logoSmall}>aniroll</p></NavLink>
                 <ul>
                     <NavLink to='/'><p id={styles.logo}>aniroll</p></NavLink>
                     <NavLink to='categories' >Categories</NavLink>
@@ -14,6 +15,11 @@ export const Navbar = () => {
                 </ul>
                 <div className={styles.userIconContainer}>
                     <img id={styles.userIcon} src={userIcon} />
+                </div>
+                <div className={styles.hamburger}>
+                    <span className={styles.bar}></span>
+                    <span className={styles.bar}></span>
+                    <span className={styles.bar}></span>
                 </div>
             </nav>
         </>
