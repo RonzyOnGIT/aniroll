@@ -24,7 +24,7 @@
 }
 
 
-ul {
+.list {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -58,6 +58,7 @@ a:hover {
 #userIcon {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .hamburger {
@@ -74,6 +75,10 @@ a:hover {
     transition: all 0.3s ease-in-out;
     background-color: white;
 
+}
+
+.nigga {
+    font-size: 50rem;
 }
 
 
@@ -93,16 +98,56 @@ a:hover {
         display: block;
     }
 
-    ul {
-        background-color: red;
-        position: absolute;
-        bottom: -165px;
-        flex-direction: column;
-        width: 100%;
-        left: -100%;
+    .hamburger .active {
+        cursor: pointer;
     }
 
-    /* .hamburger.active .bar:nth-child(2) {
+    .list {
+        background-color: rgb(74, 74, 74);
+        position: absolute;
+        top: 65px;
+        flex-direction: column;
+        width: 100%;
+        left: 100%;
+        padding-bottom: 35px;
+    }
+
+    .list.active {
+        left: 0;
+        top: 65px;
+        background-color: rgb(74, 74, 74);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        margin: auto;
+        flex: 1;
+        padding-bottom: 35px;
+        animation: slideOut  0.6s ease;
+    }
+
+
+    @keyframes slideOut {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    
+    .userIconContainer {
+        margin-left: auto;
+        margin-right: 20px;
+        width: 30px;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
@@ -110,9 +155,9 @@ a:hover {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.active .bar:nth-child(1) {
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    } */
+    }
 
 
 }

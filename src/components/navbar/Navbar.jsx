@@ -1,13 +1,23 @@
 import styles from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 import userIcon from '../../images/icons/whiteIcon.png';
+import { useState } from 'react';
 
 export const Navbar = () => {
+
+    const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
+    
+    const toggleHamburger = () => {
+        setIsHamburgerClicked(!isHamburgerClicked);
+    }
+
+    // <div className={styles[`backgroundImage${currentIndex}`]}></div>
+
     return (
         <>
             <nav className={styles.navbar}>
                 <NavLink to='/'><p id={styles.logoSmall}>aniroll</p></NavLink>
-                <ul>
+                <ul className={isHamburgerClicked ? `${styles.list} ${styles.active}` : styles.list}>
                     <NavLink to='/'><p id={styles.logo}>aniroll</p></NavLink>
                     <NavLink to='categories' >Categories</NavLink>
                     <NavLink >News</NavLink>
@@ -16,7 +26,7 @@ export const Navbar = () => {
                 <div className={styles.userIconContainer}>
                     <img id={styles.userIcon} src={userIcon} />
                 </div>
-                <div className={styles.hamburger}>
+                <div className={isHamburgerClicked ? `${styles.hamburger} ${styles.active}` : styles.hamburger} onClick={toggleHamburger}>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
