@@ -11,7 +11,6 @@ export const HeroAnimes = () => {
 
     useEffect(() => {
 
-
         setTimeout(() => {
 
             if (currentIndex === 3 || currentIndex > 3) {
@@ -20,14 +19,11 @@ export const HeroAnimes = () => {
                 return;
             }
             setCurrentIndex(prev => prev + 1);
-            setCurrentHero(heroData[currentIndex]);
+            setCurrentHero(heroData[currentIndex + 1]);
 
         }, 4000)
     })
 
-    // const changeIndex = (index) => {
-    //     setCurrentIndex(index);
-    // }
 
     return (
         <>
@@ -36,7 +32,6 @@ export const HeroAnimes = () => {
                     <h2>{currentHero ? currentHero.title : heroData[0].title}</h2>
                     <p>{currentHero ? currentHero.synopsis : heroData[0].synopsis}</p>
                     <button>Watch Now</button>
-                    {/* <h1 className={styles.debug}>{currentHero.title}</h1> */}
                 </div>
                 <div className={styles.circleContainer}>
                     <div className={currentIndex === 0 ? styles.circleActive : styles.circle}></div>

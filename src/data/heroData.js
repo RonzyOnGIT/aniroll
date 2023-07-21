@@ -20,7 +20,7 @@ export const heroData = [
         synopsis: 'Rurouni Kenshin tells the story of a wanderer named Kenshin, who used to be called Hitokiri Battousai during the Japanese civil war.'
     },
     {
-        title: 'Bleach TYBW',
+        title: 'Bleach',
         image: tyb,
         synopsis: 'Ichigo Kurosaki is a teenager from Karakura Town who can see ghosts, a talent allowing him to meet a supernatural human Rukia Kuchiki, who enters the town in search of a Hollow, a kind of monstrous lost soul who can harm both ghosts and humans.'
     }
