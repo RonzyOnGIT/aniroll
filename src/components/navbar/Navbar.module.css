@@ -103,7 +103,7 @@ a:hover {
     }
 
     .list {
-        background-color: rgb(74, 74, 74);
+        background-color: rgb(59, 59, 59);
         position: absolute;
         top: 65px;
         flex-direction: column;
@@ -115,7 +115,7 @@ a:hover {
     .list.active {
         left: 0;
         top: 65px;
-        background-color: rgb(74, 74, 74);
+        background-color: rgb(59, 59, 59);
         position: absolute;
         display: flex;
         flex-direction: column;

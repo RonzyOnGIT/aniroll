@@ -11,8 +11,6 @@ export const Navbar = () => {
         setIsHamburgerClicked(!isHamburgerClicked);
     }
 
-    // <div className={styles[`backgroundImage${currentIndex}`]}></div>
-
     return (
         <>
             <nav className={styles.navbar}>
@@ -24,7 +22,7 @@ export const Navbar = () => {
                     <NavLink >Shop</NavLink>
                 </ul>
                 <div className={styles.userIconContainer}>
-                    <img id={styles.userIcon} src={userIcon} />
+                    <NavLink to='account'><img id={styles.userIcon} src={userIcon} /></NavLink>
                 </div>
                 <div className={isHamburgerClicked ? `${styles.hamburger} ${styles.active}` : styles.hamburger} onClick={toggleHamburger}>
                     <span className={styles.bar}></span>

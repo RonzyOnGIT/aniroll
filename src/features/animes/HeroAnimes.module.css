@@ -121,6 +121,13 @@
     
 }
 
+@media screen and (max-width: 970px) {
+
+    .content {
+        width: 55%;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
 
