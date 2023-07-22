@@ -1,12 +1,8 @@
 .accountPageContainer {
     margin-top: 65px;
     height: calc(100vh - 65px);
+    width: 100%;
     /* background-color: #35373f; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
     background-image: url('../../images/backgrounds/accBackground-min.png');
     background-position: center;
 }
@@ -14,4 +10,16 @@
 .accountPageContainer h2 {
     color: white;
     font-size: 2rem;
+}
+
+.notLoggedInContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-image: url('../../images/backgrounds/accBackground-min.png');
+    background-position: center;
 }
