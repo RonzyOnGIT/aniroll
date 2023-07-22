@@ -18,8 +18,8 @@ export const Navbar = () => {
                 <ul className={isHamburgerClicked ? `${styles.list} ${styles.active}` : styles.list}>
                     <NavLink to='/'><p id={styles.logo}>aniroll</p></NavLink>
                     <NavLink to='categories' >Categories</NavLink>
-                    <NavLink >News</NavLink>
-                    <NavLink >Shop</NavLink>
+                    <NavLink to='news' >News</NavLink>
+                    <NavLink to='store' >Shop</NavLink>
                 </ul>
                 <div className={styles.userIconContainer}>
                     <NavLink to='account'><img id={styles.userIcon} src={userIcon} /></NavLink>
