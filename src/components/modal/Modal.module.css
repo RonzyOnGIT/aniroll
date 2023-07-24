@@ -1,0 +1,17 @@
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    /* z-index: 400;
+    border: 2px solid blue; */
+}
+
+.modalWrapper {
+    width: 35%;
+    height: 90%;
+    background-color: blue;
+}

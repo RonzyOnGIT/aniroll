@@ -2,10 +2,14 @@ import styles from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 import userIcon from '../../images/icons/whiteIcon.png';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { selectPfp, selectIsLoggedIn } from '../../features/isLoggedIn/isLoggedInSlice';
 
 export const Navbar = () => {
 
     const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
+    const currentPfp = useSelector(selectPfp);
+    const isLoggedIn = useSelector(selectIsLoggedIn);
     
     const toggleHamburger = () => {
         setIsHamburgerClicked(!isHamburgerClicked);
@@ -22,7 +26,7 @@ export const Navbar = () => {
                     <NavLink to='store' >Shop</NavLink>
                 </ul>
                 <div className={styles.userIconContainer}>
-                    <NavLink to='account'><img id={styles.userIcon} src={userIcon} /></NavLink>
+                    <NavLink to='account'><img id={isLoggedIn ? styles.customIcon : styles.userIcon} src={isLoggedIn ? currentPfp : userIcon} /></NavLink>
                 </div>
                 <div className={isHamburgerClicked ? `${styles.hamburger} ${styles.active}` : styles.hamburger} onClick={toggleHamburger}>
                     <span className={styles.bar}></span>

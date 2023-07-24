@@ -61,6 +61,12 @@ a:hover {
     cursor: pointer;
 }
 
+#customIcon {
+    border-radius: 50%;
+    width: 100%;
+    cursor: pointer;
+}
+
 .hamburger {
     cursor: pointer;
     display: none;
