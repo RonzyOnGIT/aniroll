@@ -26,9 +26,60 @@
 
 #pfp {
     border-radius: 50%;
+    width: 196px;
+    height: 196px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pfpImage {
+    position: relative;
+    border-radius: 50%;
     width: 200px;
+    height: 200px;
     margin-top: 50px;
     margin-bottom: 15px;
+    overflow: hidden; 
 }
+
+#changePfp {
+    position: absolute;
+    color: white;
+    top: 240px;
+    left: 54px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 0.4rem 0.8rem;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.pfpImage:hover #changePfp{
+    top: 80px;
+    animation: slideUp 0.5s ease;
+}
+
+.modalWrapper {
+    width: 50%;
+    height: 90%;
+    margin: auto;
+    background-color: red;
+    position: relative;
+    z-index: 5;
+}
+
+@keyframes slideUp {
+    from {
+        top: 240px;
+    }
+
+    to {
+        top: 80px;
+    }
+}
+
+
+
 
 
