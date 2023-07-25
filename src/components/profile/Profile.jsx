@@ -1,26 +1,29 @@
 import styles from './Profile.module.css';
-import goku from '../../images/pfp/gokupfp.png';
 
 import { useState } from 'react';
 import { Modal } from '../../components/modal/Modal';
+import { selectPfp } from '../../features/isLoggedIn/isLoggedInSlice';
+import { useSelector } from 'react-redux';
+
 
 export const Profile = ({ username }) => {
 
-    const [modal, setModal] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const pfp = useSelector(selectPfp);
 
     const toggleModal = () => {
-        setModal(!modal);
+        setIsOpen(!isOpen);
     }
     
 
 
     return (
         <>
-            {/* {modal && <Modal /> } */}
             <div className={styles.profileContainer} >
+                <Modal isOpen={isOpen} closeModal={toggleModal} />
                 <div className={styles.profileWrapper}>
                     <div className={styles.pfpImage} onClick={toggleModal}>
-                        <img id={styles.pfp} src={goku} />
+                        <img id={styles.pfp} src={pfp} />
                         <p id={styles.changePfp}>Change</p>
                     </div>
                     <h2>{username}</h2>

@@ -1,19 +1,18 @@
 
 .profileContainer {
-    width: 50%;
+    width: 100%;
     margin: auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid blue;
 }
 
 .profileWrapper {
     border-radius: 10px;
     height: 90%;
-    width: 100%;
+    width: 50%;
     background-color: rgb(56, 58, 73);
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     display: flex;
@@ -58,7 +57,7 @@
 
 .pfpImage:hover #changePfp{
     top: 80px;
-    animation: slideUp 0.5s ease;
+    animation: slideUp 0.3s ease;
 }
 
 .modalWrapper {
@@ -80,6 +79,35 @@
         top: 80px;
     }
 }
+
+@media screen and (max-width: 750px) {
+
+    .pfpImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    #pfp {
+        width: 146px;
+        height: 146px;
+    }
+    
+}
+
+@media screen and (max-width: 476px) {
+
+    .pfpImage {
+        width: 70%;
+        height: auto;
+    }
+
+    #pfp {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
 
 
 
