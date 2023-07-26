@@ -13,8 +13,8 @@
     z-index: 1000;
     top: 50%;
     left: 50%;
-    height: 500px;
-    width: 450px;
+    height: 80%;
+    width: 40%;
     transform: translate(-50%, -50%);
     background-color: rgb(52, 52, 72);
     display: flex;
@@ -57,4 +57,12 @@
 
 .hamburger .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 1115px) {
+
+    .modalWrapper {
+        width: 65%;
+    }
+
 }

@@ -1,4 +1,5 @@
 import styles from './Modal.module.css';
+import { ProfilePictures } from '../../components/pfp/ProfilePictures';
 
 export const Modal = ( { isOpen, closeModal }) => {
 
@@ -16,6 +17,7 @@ export const Modal = ( { isOpen, closeModal }) => {
                             <span class={styles.bar}></span>
                         </div>
                     </div>
+                    <ProfilePictures />
                 </div>
             </div>
         </>

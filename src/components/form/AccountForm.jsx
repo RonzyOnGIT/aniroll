@@ -10,9 +10,14 @@ export const AccountForm = () => {
     const dispatch = useDispatch();
 
     const [input, setInput] = useState('');
+    const [error, setError] = useState(false);
 
     const onSubmit = (e) => {
         e.preventDefault();
+        if (input.length === 0) {
+            setError(true);
+            return ;
+        }
         dispatch(logIn(input));
     }
 
@@ -28,6 +33,7 @@ export const AccountForm = () => {
                 <input type='text' placeholder='username' value={input} onChange={handleChange} />
                 <button type='submit'>Create Account</button>
             </form>
+            {error && <p id={styles.verificationText}>Username must be at least 1 character long</p>}
         </>
 
         )
