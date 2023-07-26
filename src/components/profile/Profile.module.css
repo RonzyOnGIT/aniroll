@@ -91,13 +91,17 @@
         width: 146px;
         height: 146px;
     }
+
+    #changePfp {
+        left: 20%;
+    }
     
 }
 
 @media screen and (max-width: 476px) {
 
     .pfpImage {
-        width: 70%;
+        width: 60%;
         height: auto;
     }
 
@@ -105,7 +109,39 @@
         width: 100%;
         height: auto;
     }
+
+    #changePfp {
+        left: 28%;
+        font-size: 14px;
+    }
     
+    .profileWrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 386px) {
+
+    #changePfp {
+        left: 20px;
+        width: 65%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .profileWrapper h2 {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 296px)  {
+
+    #changePfp {
+        display: none;
+    }
+
 }
 
 
