@@ -1,13 +1,18 @@
 import styles from './Home.module.css';
 
 import { Hero } from '../../components/hero/Hero';
+import { HomeSection } from '../../components/homeSection/HomeSection';
+
 
 export const Home = () => {
 
     return (
         <>
             <Hero />
-            <h1 id={styles.homeText}>Home</h1>
+            <div className={styles.homeContainer}>
+                <HomeSection title={'Recommendations'} />
+                <HomeSection title={'New'} />
+            </div>
         </>
     )
 }

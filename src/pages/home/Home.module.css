@@ -1,4 +1,9 @@
+.homeContainer {
+    background-color: rgb(27, 27, 27);
+    padding: 5rem 0;
+}
+
 
 #homeText {
-    color: black;
+    color: white;
 }
