@@ -12,9 +12,9 @@ export const Modal = ( { isOpen, closeModal }) => {
                     <div className={styles.header}>
                         <h2>Change Avatar</h2>
                         <div className={styles.hamburger} onClick={closeModal}>
-                            <span class={styles.bar}></span>
-                            <span class={styles.bar}></span>
-                            <span class={styles.bar}></span>
+                            <span className={styles.bar}></span>
+                            <span className={styles.bar}></span>
+                            <span className={styles.bar}></span>
                         </div>
                     </div>
                     <ProfilePictures />

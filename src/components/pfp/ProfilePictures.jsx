@@ -8,7 +8,7 @@ export const ProfilePictures = () => {
 
         <>
             <div className={styles.profilesContainer}>
-                {pfpImages.map(pfp => <ProfilePic img={pfp} />)}
+                {pfpImages.map(pfp => <ProfilePic img={pfp} key={pfp} />)}
             </div>
         </>
     )

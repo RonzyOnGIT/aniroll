@@ -65,7 +65,12 @@ a:hover {
     border-radius: 50%;
     width: 100%;
     cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top: 3px;
 }
+
 
 .hamburger {
     cursor: pointer;
