@@ -9,20 +9,20 @@ export const HeroAnimes = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentHero, setCurrentHero] = useState();    
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     setTimeout(() => {
+        setTimeout(() => {
 
-    //         if (currentIndex === 3 || currentIndex > 3) {
-    //             setCurrentIndex(0);
-    //             setCurrentHero(heroData[0]);
-    //             return;
-    //         }
-    //         setCurrentIndex(prev => prev + 1);
-    //         setCurrentHero(heroData[currentIndex + 1]);
+            if (currentIndex === 3 || currentIndex > 3) {
+                setCurrentIndex(0);
+                setCurrentHero(heroData[0]);
+                return;
+            }
+            setCurrentIndex(prev => prev + 1);
+            setCurrentHero(heroData[currentIndex + 1]);
 
-    //     }, 4000)
-    // })
+        }, 4000)
+    })
 
 
     return (
