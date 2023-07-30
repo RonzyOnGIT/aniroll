@@ -3,6 +3,8 @@ import { Animes } from '../../features/anime/Animes';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAnimesForSection } from '../../features/anime/animeSlice';
+import { LoadingSkeleton } from '../../components/loadingSkeleton/LoadingSkeleton';
+
 
 export const HomeSection = ({ title, endPoint }) => {
 

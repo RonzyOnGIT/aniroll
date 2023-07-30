@@ -1,5 +1,6 @@
 import styles from './Anime.module.css';
 
+
 export const Anime = ({ thumbnail, title, synopsis }) => {
 
     return (

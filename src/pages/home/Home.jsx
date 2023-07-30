@@ -2,7 +2,6 @@ import styles from './Home.module.css';
 
 import { Hero } from '../../components/hero/Hero';
 import { HomeSection } from '../../components/homeSection/HomeSection';
-import { fetchAnimesForSection } from '../../features/anime/animeSlice';
 
 
 
