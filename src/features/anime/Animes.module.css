@@ -1,0 +1,7 @@
+.animesContainer {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: flex-start;
+}

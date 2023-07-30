@@ -10,7 +10,7 @@ export const Animes = ({ animes, loading }) => {
 
         <>
             <div className={styles.animesContainer}>
-                {loading === undefined ? <p>Loading...</p> : animes.map(anime => <Anime key={anime.title} thumbnail={anime.images.jpg.small_image_url} synopsis={anime.synopsis} title={anime.title} />)}
+                {loading === undefined ? <p>Loading...</p> : animes.map(anime => <Anime key={anime.title} thumbnail={anime.images.jpg.large_image_url} synopsis={anime.synopsis} title={anime.title} />)}
             </div>
         </>
     )

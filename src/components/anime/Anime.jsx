@@ -5,7 +5,8 @@ export const Anime = ({ thumbnail, title, synopsis }) => {
     return (
         <>
             <div className={styles.animeWrapper}>
-                <img src={thumbnail} />
+                <img id={styles.animeCover} src={thumbnail} />
+                <p>{title}</p>
             </div>
         </>
     )

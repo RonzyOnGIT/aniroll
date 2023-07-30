@@ -8,7 +8,7 @@ export const HomeSection = ({ title, endPoint }) => {
 
     const animes = useSelector(state => state.animes.genres[endPoint]?.animes);
 
-    console.log(animes);
+    // console.log(animes);
     
     //loading state for each genre state
     let individualLoading = useSelector(state => state.animes.genres[endPoint]?.isLoading);    
