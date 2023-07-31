@@ -14,7 +14,7 @@ export const AccountForm = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        if (input.length === 0) {
+        if (input.length === 0 || input.length > 16) {
             setError(true);
             return ;
         }
@@ -33,7 +33,7 @@ export const AccountForm = () => {
                 <input type='text' placeholder='username' value={input} onChange={handleChange} />
                 <button type='submit'>Create Account</button>
             </form>
-            {error && <p id={styles.verificationText}>Username must be at least 1 character long</p>}
+            {error && <p id={styles.verificationText}>Username must be between 1 and 16 characters long</p>}
         </>
 
         )
