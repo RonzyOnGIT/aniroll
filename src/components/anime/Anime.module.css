@@ -1,12 +1,17 @@
 
 .animeWrapper {
-    min-width: 20%;
+    max-width: 100%;
+    height: 65vh;
     margin: 0 15px;
+}
+
+.animeWrapper p {
+    margin-top: 5px;
 }
 
 #animeCover {
     width: 100%;
-    height: 80%;
+    height: 60vh;
     object-fit: cover;
 }
 
@@ -15,12 +20,21 @@
     width: 100px;
 }
 
-@media screen and (max-width: 960px) {
-    
+@media screen and (max-width: 480px) {
+
     .animeWrapper {
-        min-width: 35%;
+        width: 40vw;
+        height: 55vh;
+        margin: 0 10px;
+    }
+
+    #animeCover {
+        height: 35vh;
     }
 }
+
+
+
 
 
 
