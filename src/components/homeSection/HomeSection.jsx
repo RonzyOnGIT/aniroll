@@ -6,6 +6,8 @@ import { fetchAnimesForSection } from '../../features/anime/animeSlice';
 import { LoadingSkeleton } from '../../components/loadingSkeleton/LoadingSkeleton';
 
 
+
+
 export const HomeSection = ({ title, endPoint }) => {
 
     const animes = useSelector(state => state.animes.genres[endPoint]?.animes);

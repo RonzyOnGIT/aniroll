@@ -1,0 +1,61 @@
+.flippedContainer {
+    max-width: 100%;
+    height: 70vh;
+    margin: 0 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation-name: opac;
+    animation-duration: 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.flippedContainer p {
+    font-size: 0.9rem;
+    color: white;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; 
+    -webkit-box-orient: vertical;
+    opacity: 1;
+
+}
+
+.flippedContainer img {
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noDisplay {
+    display: none;
+    transition: 0.5s;
+}
+
+@keyframes opac {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .flippedContainer p {
+        -webkit-line-clamp: 5; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .flippedContainer p {
+        -webkit-line-clamp: 3; 
+    }
+}

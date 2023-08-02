@@ -5,7 +5,9 @@
     margin: 0 14px;
     text-overflow: ellipsis;
     overflow: hidden;
+    cursor: pointer;
 }
+
 
 .animeWrapper p {
     margin-top: 5px;
@@ -17,11 +19,20 @@
     object-fit: cover;
 }
 
+#noImage {
+    display: none;
+}
+
+#noText {
+    display: none;
+}
 
 
 #test {
     width: 100px;
 }
+
+
 
 @media screen and (max-width: 920px) {
 

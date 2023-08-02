@@ -5,3 +5,8 @@
     overflow: hidden;
     justify-content: flex-start;
 } */
+
+#loadingBlank {
+    display: none;
+}
+
