@@ -2,7 +2,7 @@
 .animeWrapper {
     max-width: 100%;
     height: 65vh;
-    margin: 0 15px;
+    margin: 0 14px;
 }
 
 .animeWrapper p {
@@ -19,6 +19,7 @@
 #test {
     width: 100px;
 }
+
 
 @media screen and (max-width: 480px) {
 

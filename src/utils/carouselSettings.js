@@ -8,7 +8,7 @@ export const settings = {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1224,
+        breakpoint: 1244,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -17,7 +17,7 @@ export const settings = {
         }
       },
       {
-        breakpoint: 820,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
