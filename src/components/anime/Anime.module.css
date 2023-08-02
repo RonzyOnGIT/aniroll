@@ -1,8 +1,10 @@
 
 .animeWrapper {
     max-width: 100%;
-    height: 65vh;
+    height: 70vh;
     margin: 0 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .animeWrapper p {
@@ -11,21 +13,58 @@
 
 #animeCover {
     width: 100%;
-    height: 60vh;
+    height: 86%;
     object-fit: cover;
 }
+
 
 
 #test {
     width: 100px;
 }
 
+@media screen and (max-width: 920px) {
+
+    #animeCover {
+        height: 85%;
+    }
+
+    .animeWrapper {
+        height: 55vh;
+    }
+
+}
+
+@media screen and (min-height: 1300px) and (max-width: 1800px) {
+
+    #animeCover {
+        height: 90%;
+    }
+
+    .animeWrapper {
+        height: 44vh;
+    }
+}
+
+@media screen and (min-height: 1300px) and (max-width: 1320px) {
+
+    #animeCover {
+        height: 90%;
+    }
+
+    .animeWrapper {
+        height: 35vh;
+    }
+}
+
+
+
 
 @media screen and (max-width: 480px) {
 
     .animeWrapper {
         width: 40vw;
-        height: 55vh;
+        height: 50vh;
         margin: 0 10px;
     }
 
