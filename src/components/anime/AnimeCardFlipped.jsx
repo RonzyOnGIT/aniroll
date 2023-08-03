@@ -1,4 +1,5 @@
 import styles from './AnimeCardFlipped.module.css';
+import { WatchListIcon } from '../../components/icons/WatchListIcon';
 
 export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
 
@@ -8,6 +9,11 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
                 <p>{title}</p>
                 <p>{synopsis}</p>
                 <img src={thumbnail} />
+                <div className={styles.iconsContainer}>
+                    <WatchListIcon />
+                    <WatchListIcon />
+                    <WatchListIcon />
+                </div>
             </div>
         </>
     )
