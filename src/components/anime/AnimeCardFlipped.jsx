@@ -12,3 +12,5 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
         </>
     )
 }
+
+
