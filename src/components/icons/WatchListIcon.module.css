@@ -3,3 +3,7 @@ svg {
     z-index: 2;
     cursor: pointer;
 }
+
+.filledIcon {
+    fill: rgb(255, 55, 55);
+}
