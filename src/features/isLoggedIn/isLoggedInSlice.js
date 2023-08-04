@@ -20,6 +20,9 @@ const isLoggedIn = createSlice({
         },
         addAnimeToWatchlist: (state, action) => {
             state.watchlist = [...state.watchlist, action.payload];
+        },
+        removeAnimeFromWatchlist: (state, action) => {
+            state.watchlist = state.watchlist.filter(anime => anime.title !== action.payload.title);
         }
     }
 })
@@ -28,6 +31,7 @@ export default isLoggedIn.reducer;
 export const { logIn } = isLoggedIn.actions;
 export const { changePfp } = isLoggedIn.actions;
 export const { addAnimeToWatchlist } = isLoggedIn.actions;
+export const { removeAnimeFromWatchlist } = isLoggedIn.actions;
 export const selectIsLoggedIn = state => state.loggedIn.loggedIn;
 export const selectUsername = state => state.loggedIn.name;
 export const selectPfp = state => state.loggedIn.pfp;

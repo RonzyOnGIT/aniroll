@@ -1,18 +1,27 @@
 import styles from './AnimeCardFlipped.module.css';
 import { WatchListIcon } from '../../components/icons/WatchListIcon';
-import { useDispatch } from 'react-redux';
-import { addAnimeToWatchlist } from '../../features/isLoggedIn/isLoggedInSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addAnimeToWatchlist, removeAnimeFromWatchlist, selectWatchlist } from '../../features/isLoggedIn/isLoggedInSlice';
 import { useState } from 'react';
 
 export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
 
     const dispatch = useDispatch();
+    const watchlist = useSelector(selectWatchlist);
     const [isAnimeOnWatchlist, setIsAnimeOnWatchlist] = useState();
 
     const handleClick = () => {
-        dispatch(addAnimeToWatchlist({title: title, thumbnail: thumbnail, synopsis, synopsis, isHovered: isHovered}));
+        const animeToAdd = {title: title, thumbnail: thumbnail, synopsis: synopsis, isHovered: isHovered};
+        //check if anime is already on watchlist so it won't add duplicate
+        if (isAnimeOnWatchlist == true) {
+            setIsAnimeOnWatchlist(!isAnimeOnWatchlist);
+            dispatch(removeAnimeFromWatchlist(animeToAdd));
+            return;
+        }
+        dispatch(addAnimeToWatchlist(animeToAdd));
         setIsAnimeOnWatchlist(!isAnimeOnWatchlist);
     }
+
 
     return (
         <>
