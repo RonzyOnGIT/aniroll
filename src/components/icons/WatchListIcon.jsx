@@ -5,24 +5,10 @@ export const WatchListIcon = ({ onClick, isOnWatchlist }) => {
     return (
 
         <>
-            <svg onClick={onClick} className={isOnWatchlist ? styles.filledIcon : styles.hollowIcon} title='watchlist' width="29" height="84" viewBox="0 0 109 164" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_1_3)">
-            <path d="M8 144V4H101V144L55 85L8 144Z" stroke="rgb(255, 55, 55)" strokeWidth="8" shapeRendering="crispEdges"/>
-            </g>
-            <defs>
-            <filter id="filter0_d_1_3" x="0" y="0" width="109" height="163.636" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset dy="4"/>
-            <feGaussianBlur stdDeviation="2"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
-            </filter>
-            </defs>
+            <svg onClick={onClick} className={isOnWatchlist ? styles.filledIcon : styles.hollowIcon} width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="rgb(255, 55, 55)" strokeWidth="1.5" strokeLinejoin="round"/>
             </svg>
-
         </>
     )
 }
+

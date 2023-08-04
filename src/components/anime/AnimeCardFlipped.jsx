@@ -1,5 +1,6 @@
 import styles from './AnimeCardFlipped.module.css';
 import { WatchListIcon } from '../../components/icons/WatchListIcon';
+import { PlayIcon } from '../../components/icons/PlayIcon';
 import { useDispatch, useSelector } from 'react-redux';
 import { addAnimeToWatchlist, removeAnimeFromWatchlist, selectWatchlist } from '../../features/isLoggedIn/isLoggedInSlice';
 import { useState } from 'react';
@@ -31,7 +32,7 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
                 <img src={thumbnail} />
                 <div className={styles.iconsContainer}>
                     <WatchListIcon onClick={handleClick} isOnWatchlist={isAnimeOnWatchlist}/>
-                    <WatchListIcon onClick={handleClick} isOnWatchlist={isAnimeOnWatchlist}/>
+                    <PlayIcon/>
                 </div>
             </div>
         </>
