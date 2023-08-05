@@ -1,0 +1,18 @@
+.categoriesContainer {
+    background-color: rgb(27, 27, 27);
+    margin-top: 65px;
+    color: white;
+    height: calc(100vh - 65px);
+    width: 100%;
+}
+
+.categoriesWrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    padding-top: 5%;
+    margin: auto;
+    justify-content: center;
+}
