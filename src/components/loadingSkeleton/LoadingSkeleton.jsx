@@ -13,7 +13,6 @@ export const LoadingSkeleton = () => {
                     <div className={styles.skeleton}><Skeleton /></div>
                     <div className={styles.skeleton}><Skeleton /></div>
                     <div className={styles.skeleton}><Skeleton /></div>
-                    <div className={styles.skeleton}><Skeleton /></div>
                 </div>
             </SkeletonTheme>
         </>

@@ -9,7 +9,7 @@ import parasyte from '../../images/backgrounds/parasyteCat-min.png';
 
 import { AnimeCategoryCard } from '../../components/animeCategoryCard/AnimeCategoryCard';
 
-export const CategoriesPage = () => {
+ const CategoriesPage = () => {
 
     return (
         <>
@@ -26,3 +26,5 @@ export const CategoriesPage = () => {
         </>
     )
 }
+
+export default CategoriesPage;
