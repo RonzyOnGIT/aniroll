@@ -9,14 +9,18 @@ export const FileUploader = () => {
     const dispatch = useDispatch();
 
     const [customPfp, setCustomPfp] = useState();
+    const [noFileChosen, setNoFileChosen] = useState(false);
 
 
     const handleFileUpload = (e) => {
+
         e.preventDefault();
         if (!customPfp) {
             console.log('no file selected');
+            setNoFileChosen(true);
             return;
         }
+        setNoFileChosen(false);
 
         const fd = new FormData();
         fd.append('file', customPfp);
@@ -40,7 +44,8 @@ export const FileUploader = () => {
             <form className={styles.fileUploadWrapper} onSubmit={handleFileUpload}>
                 <input id='file' type='file' accept='image/*' onChange={(e) => setCustomPfp(e.target.files[0])} />
                 <label htmlFor='file'>Upload Custom Picture</label>
-                <button type='submit'>Update Pfp</button>
+                <button type='submit'>Update pfp</button>
+                {noFileChosen && <p>No File Chosen</p>}
             </form>
         </>
     )

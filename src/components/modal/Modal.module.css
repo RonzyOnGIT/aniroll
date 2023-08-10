@@ -29,6 +29,7 @@
     text-align: center;
 }
 
+
 .hamburger {
     cursor: pointer;
     position: absolute;
@@ -65,4 +66,24 @@
         width: 65%;
     }
 
+}
+
+@media screen and (max-width: 520px) {
+
+    .modalWrapper {
+        width: 75%;
+    }
+
+    .header h2 {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media screen and (max-width: 372px) {
+    .header h2 { 
+        width: 70%;
+        margin: auto;
+        font-size: 1.4rem;
+    }
 }

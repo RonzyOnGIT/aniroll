@@ -1,6 +1,6 @@
 .fileUploadWrapper {
     height: 10%;
-    width: 40%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,11 +16,80 @@ label {
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
-    width: 100%;
+    width: 200px;
+    height: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    height: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: var(--red-color);
 }
 
 
 label:hover {
-    background-color: rgb(207, 207, 207);
+    background-color: var(--red-color);
+}
+
+@media screen and (max-width: 670px) {
+
+    .fileUploadWrapper {
+        width: 85%;
+    }
+
+    label {
+        font-size: 14px;
+        padding: 0.3rem;
+    }
+    
+}
+
+@media screen and (max-width: 365px) {
+
+    .fileUploadWrapper {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    label {
+        width: 160px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 365px) {
+
+    label {
+        width: 120px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    button {
+       font-weight: 500;
+       font-size: 12px;
+       padding: 0.3rem 1.1rem;
+    }
+
 }

@@ -4,3 +4,10 @@
     height: auto;
     cursor: pointer;
 }
+
+@media screen and (max-width: 350px) {
+    
+    #image {
+        width: 65px;
+    }
+}
