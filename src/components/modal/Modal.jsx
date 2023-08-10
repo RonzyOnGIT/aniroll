@@ -1,5 +1,6 @@
 import styles from './Modal.module.css';
 import { ProfilePictures } from '../../components/pfp/ProfilePictures';
+import { FileUploader } from '../../components/fileUploader/FileUploader';
 
 export const Modal = ( { isOpen, closeModal }) => {
 
@@ -18,6 +19,7 @@ export const Modal = ( { isOpen, closeModal }) => {
                         </div>
                     </div>
                     <ProfilePictures />
+                    <FileUploader />
                 </div>
             </div>
         </>

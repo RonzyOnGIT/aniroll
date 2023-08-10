@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 25%;
-    height: 40%;
+    height: 48%;
     position: relative;
     background-color: rgb(75, 60, 60);
     cursor: pointer;
@@ -38,6 +38,7 @@
 
     .categoryCardContainer {
         width: 35%;
+        height: 40%;
     }
 }
 
