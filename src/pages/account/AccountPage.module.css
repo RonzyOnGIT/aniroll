@@ -2,7 +2,6 @@
     margin-top: 65px;
     height: calc(100vh - 65px);
     width: 100%;
-    /* background-color: #35373f; */
     background-image: url('../../images/backgrounds/accBackground-min.png');
     background-position: center;
 }
@@ -22,4 +21,15 @@
     gap: 15px;
     background-image: url('../../images/backgrounds/accBackground-min.png');
     background-position: center;
+}
+
+
+#backgroundForLoading {
+    display: none;
+}
+
+#test {
+    margin-top: 70px;
+    color: blue;
+    font-size: 3rem;
 }

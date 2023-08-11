@@ -183,4 +183,8 @@
     .circleContainer {
         left: 35%;
     }
+
+    .content button {
+        margin: 20px auto;
+    }
 }
