@@ -47,6 +47,12 @@ label:hover {
     background-color: var(--red-color);
 }
 
+#pfpPreview {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 670px) {
 
     .fileUploadWrapper {

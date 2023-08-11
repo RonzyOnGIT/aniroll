@@ -34,5 +34,15 @@
 }
 
 #verificationText {
-    color: var(--red-color);
+    color: var(--red-color);    
+    text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+
+    .formContainer input {
+        width: 95%;
+        margin: auto;
+    }
+
 }

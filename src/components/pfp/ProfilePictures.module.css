@@ -1,8 +1,16 @@
 .profilesContainer {
-    width: 95%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin: 10px auto;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 580px) {
+    
+    .profilesContainer {
+        width: 90%;
+    }
+
 }

@@ -28,8 +28,14 @@
     display: none;
 }
 
-#test {
-    margin-top: 70px;
-    color: blue;
-    font-size: 3rem;
+
+
+@media screen and (max-width: 360px) {
+
+    .accountPageContainer h2 {
+        width: 95%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
 }
