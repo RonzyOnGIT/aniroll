@@ -1,53 +1,4 @@
-.backgroundImage0 {
-    background-image: url('../../images/backgrounds/hellparadise-min.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 65px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    transition: 0.3s;
-    position: relative;
-}
-
-.backgroundImage1 {
-    background-image: url('../../images/backgrounds/jjkseason2-min.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 65px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    transition: 0.3s;
-    position: relative;
-}
-
-
-
-.backgroundImage2 {
-    background-image: url('../../images/backgrounds/kenshin-min.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 65px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    transition: 0.3s;
-    position: relative;
-}
-
-
-.backgroundImage3 {
-    background-image: url('../../images/backgrounds/tyb-min.png');
+.backgroundImage {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -131,7 +82,7 @@
 
 @media screen and (max-width: 800px) {
 
-    .backgroundImage0, .backgroundImage1, .backgroundImage2, .backgroundImage3 {
+    .backgroundImage {
         justify-content: center;
         padding: 0;
     }
@@ -148,25 +99,6 @@
 
 @media screen and (max-width: 575px) {
 
-    .backgroundImage0, .backgroundImage1, .backgroundImage2, .backgroundImage3 {
-        background-size: cover;
-    }
-
-    .backgroundImage0 {
-        background-image: url('../../images/backgrounds/paradiseSmall-min.png');
-    }
-
-    .backgroundImage1 {
-        background-image: url('../../images/backgrounds/smallJjk-min.png');
-    }
-
-    .backgroundImage2 {
-        background-image: url('../../images/backgrounds/kenshinSmall-min.png');
-    }
-
-    .backgroundImage3 {
-        background-image: url('../../images/backgrounds/bleachSmall-min.png');
-    }
 
     .content {
         text-align: center;

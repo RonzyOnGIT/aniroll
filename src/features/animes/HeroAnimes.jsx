@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 export const HeroAnimes = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [currentHero, setCurrentHero] = useState();    
+    const [currentHero, setCurrentHero] = useState(heroData[0]);    
 
     useEffect(() => {
 
@@ -24,10 +24,9 @@ export const HeroAnimes = () => {
         }, 4000)
     })
 
-
     return (
         <>
-            <div className={styles[`backgroundImage${currentIndex}`]}>
+            <div className={styles.backgroundImage} style={{backgroundImage: `url(${currentHero.image})`}}>
                 <div className={styles.content}>
                     <h2>{currentHero ? currentHero.title : heroData[0].title}</h2>
                     <p>{currentHero ? currentHero.synopsis : heroData[0].synopsis}</p>

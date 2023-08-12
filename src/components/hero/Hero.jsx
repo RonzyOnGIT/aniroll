@@ -5,7 +5,6 @@ import { HeroAnimes } from '../../features/animes/HeroAnimes';
 export const Hero = () => {
 
 
-
     return (
         <>
             <div className={styles.heroContainer}>
