@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
 }
 
 .header {
@@ -72,6 +73,7 @@
 
     .modalWrapper {
         width: 75%;
+        padding-bottom: 40px;
     }
 
     .header h2 {
