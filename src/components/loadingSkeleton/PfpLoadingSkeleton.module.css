@@ -1,0 +1,29 @@
+
+.pfpSkeleton {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    /* background-color: #202020; */
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #202020 25%, #444 38%, #444 40%, #202020 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0; 
+    animation: load 0.8s infinite;
+}
+
+@keyframes load {
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    
+    .pfpSkeleton {
+        width: 65px;
+        height: 65px;
+    }
+}
