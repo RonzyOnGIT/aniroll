@@ -1,10 +1,10 @@
-import hell from '../images/backgrounds/hellparadise-min.png';
+import hell from '../images/backgrounds/hellparadise-minn.webp';
 import hellSmall from '../images/backgrounds/paradiseSmall-min.png';
-import jjk from '../images/backgrounds/jjkseason2-min.png';
+import jjk from '../images/backgrounds/jjkseason2-minn.webp';
 import jjkSmall from '../images/backgrounds/smallJjk-min.png';
-import kenshin from '../images/backgrounds/kenshin-min.png';
+import kenshin from '../images/backgrounds/kenshin-minn.webp';
 import kenshinSmall from '../images/backgrounds/kenshinSmall-min.png';
-import tyb from '../images/backgrounds/tyb-min.png';
+import tyb from '../images/backgrounds/tyb-minnn.webp';
 import tybSmall from '../images/backgrounds/bleachSmall-min.png';
 
 export const heroData = [
