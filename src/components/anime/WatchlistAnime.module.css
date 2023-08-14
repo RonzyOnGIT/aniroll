@@ -1,0 +1,19 @@
+.watchlistWrapper {
+    max-width: 100%;
+    height: 70vh;
+    margin: 0 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+}
+
+.watchlistWrapper p {
+    margin-top: 5px;
+}
+
+#animeCover {
+    width: 100%;
+    height: 86%;
+    object-fit: cover;
+}

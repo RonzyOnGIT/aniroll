@@ -1,5 +1,5 @@
 .fileUploadWrapper {
-    height: 30%;
+    height: 33%;
     width: 70%;
     display: flex;
     align-items: center;
@@ -7,6 +7,7 @@
     margin-top: 40px;
     flex-wrap: wrap;
     gap: 5px;
+    margin-bottom: 10px;
 }
 
 input[type='file'] {
@@ -45,11 +46,13 @@ button {
 
 button:hover {
     background-color: var(--red-color);
+    transition: 0.2s;
 }
 
 
 label:hover {
     background-color: var(--red-color);
+    transition: 0.2s;
 }
 
 #pfpPreview {
@@ -103,5 +106,6 @@ label:hover {
        font-size: 12px;
        padding: 0.3rem 1.1rem;
     }
+
 
 }

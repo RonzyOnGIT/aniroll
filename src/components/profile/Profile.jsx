@@ -14,7 +14,7 @@ export const Profile = ({ username }) => {
     const toggleModal = () => {
         setIsOpen(!isOpen);
     }
-    
+
 
 
     return (

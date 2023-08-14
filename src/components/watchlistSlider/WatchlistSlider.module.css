@@ -1,0 +1,15 @@
+.watchlistSliderContainer {
+    width: 85%;
+    margin: 110px auto;
+}
+
+.watchlistSliderContainer h2 {
+    color: white;
+}
+
+#divider {
+    background-color: var(--red-color);
+    height: 5px;
+    width: 100%;
+    margin: 14px auto 15px;
+}

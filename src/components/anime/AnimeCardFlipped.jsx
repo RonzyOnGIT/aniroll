@@ -24,6 +24,7 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
     }
 
 
+
     return (
         <>
             <div className={isHovered ? styles.flippedContainer : styles.noDisplay}>
