@@ -69,6 +69,24 @@
     z-index: 5;
 }
 
+.watchListButton {
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 10px;
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.watchListButton:hover {
+    background-color: var(--red-color);
+    transition: 0.2s;
+}
+
 
 @keyframes slideUp {
     from {
@@ -133,6 +151,16 @@
         font-size: 1.5rem;
     }
 
+    .watchListButton {
+        width: 120px;
+        padding: 0.3rem 1rem;
+    }
+
+    .watchListButton p {
+        font-size: 12px;
+
+    }
+
 
 }
 
@@ -140,6 +168,10 @@
 
     #changePfp {
         display: none;
+    }
+
+    .watchListButton {
+        width: 90px;
     }
 
 }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Modal } from '../../components/modal/Modal';
 import { selectPfp } from '../../features/isLoggedIn/isLoggedInSlice';
 import { useSelector } from 'react-redux';
-
+import { BookMark } from '../../components/icons/BookMark';
 
 export const Profile = ({ username }) => {
 
@@ -27,6 +27,10 @@ export const Profile = ({ username }) => {
                         <p id={styles.changePfp}>Change</p>
                     </div>
                     <h2>{username}</h2>
+                    <div className={styles.watchListButton}>
+                        <BookMark />
+                        <p>Watchlist</p>
+                    </div>
                 </div>
             </div>
         </>

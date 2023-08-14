@@ -1,0 +1,9 @@
+
+
+@media screen and (max-width: 280px) {
+
+    #bookMark {
+        height: 10px;
+        width: 10px;
+    }
+}
