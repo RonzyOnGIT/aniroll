@@ -1,5 +1,6 @@
 import styles from './SingleAnimePage.module.css';
 import { useParams } from 'react-router';
+import { ImageHeader } from '../../components/imageHeader/ImageHeader';
 
 export const SingleAnimePage = () => {
 
@@ -9,7 +10,7 @@ export const SingleAnimePage = () => {
 
         <>
             <div className={styles.singlePageContainer}>
-                <h1>Watch {id}</h1>
+                <ImageHeader />
             </div>
         </>
     )

@@ -2,7 +2,7 @@ import styles from './AnimeCardFlipped.module.css';
 import { WatchListIcon } from '../../components/icons/WatchListIcon';
 import { PlayIcon } from '../../components/icons/PlayIcon';
 import { useDispatch, useSelector } from 'react-redux';
-import { addAnimeToWatchlist, removeAnimeFromWatchlist, selectWatchlist } from '../../features/isLoggedIn/isLoggedInSlice';
+import { addAnimeToWatchlist, removeAnimeFromWatchlist, selectWatchlist, switchCurrentAnime } from '../../features/isLoggedIn/isLoggedInSlice';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
@@ -26,6 +26,7 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
     }
 
     const navigateToSingleAnimePage = () => {
+        dispatch(switchCurrentAnime({title: title, thumbnail: thumbnail, synopsis: synopsis}));
         navigate(`series/${title}`);
     }
 
