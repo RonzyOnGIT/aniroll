@@ -1,11 +1,11 @@
 import styles from './PlayIcon.module.css';
 
-export const PlayIcon = () => {
+export const PlayIcon = ({ handleClick }) => {
 
     return (
         
         <>
-            <svg className={styles.playSvg} fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+            <svg className={styles.playSvg} onClick={handleClick} fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                 width="32px" height="32px" viewBox="0 0 38.083 38.083"
                 xmlSpace="preserve">
             <g>

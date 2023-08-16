@@ -4,10 +4,12 @@ import { PlayIcon } from '../../components/icons/PlayIcon';
 import { useDispatch, useSelector } from 'react-redux';
 import { addAnimeToWatchlist, removeAnimeFromWatchlist, selectWatchlist } from '../../features/isLoggedIn/isLoggedInSlice';
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const watchlist = useSelector(selectWatchlist);
     const [isAnimeOnWatchlist, setIsAnimeOnWatchlist] = useState();
 
@@ -23,6 +25,10 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
         setIsAnimeOnWatchlist(!isAnimeOnWatchlist);
     }
 
+    const navigateToSingleAnimePage = () => {
+        navigate(`series/${title}`);
+    }
+
 
 
     return (
@@ -33,7 +39,7 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
                 <img src={thumbnail} />
                 <div className={styles.iconsContainer}>
                     <WatchListIcon onClick={handleClick} isOnWatchlist={isAnimeOnWatchlist}/>
-                    <PlayIcon/>
+                    <PlayIcon handleClick={navigateToSingleAnimePage} />
                 </div>
             </div>
         </>

@@ -7,6 +7,7 @@ import { Home } from './pages/home/Home';
 import { AccountPage } from './pages/account/AccountPage';
 import { NewsPage } from './pages/news/NewsPage';
 import { StorePage } from './pages/store/StorePage';
+import { SingleAnimePage } from './pages/singleAnimePage/SingleAnimePage';
 const CategoriesPage = React.lazy(() => import('./pages/categories/CategoriesPage'));
 
 import { Loading } from './components/loading/Loading';
@@ -23,6 +24,7 @@ export const App = () => {
       <Route path='account' element={ <AccountPage /> } />
       <Route path='news' element={ <NewsPage /> } />
       <Route path='store' element={ <StorePage /> } />
+      <Route path='series/:id' element={ <SingleAnimePage /> } />
     </Route>
   ))
 
