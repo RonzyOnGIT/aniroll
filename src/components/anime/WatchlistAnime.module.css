@@ -17,3 +17,11 @@
     height: 86%;
     object-fit: cover;
 }
+
+#noText {
+    display: none;
+}
+
+#noImage {
+    display: none;
+}

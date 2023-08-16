@@ -19,7 +19,7 @@ export const Home = () => {
                 <HomeSection title={'Recommendations'} endPoint={'top/anime?limit=25'} />
                 <HomeSection title={'New'} endPoint={'seasons/now'} />
                 <ShopPromotion image={flashSale} navTo={'store'} />
-                {watchlist.length > 0 && <WatchlistSlider />}
+                {Object.keys(watchlist).length > 0 && <WatchlistSlider /> }
             </div>
         </>
     )

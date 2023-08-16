@@ -1,7 +1,6 @@
 import styles from './WatchlistSlider.module.css';
 import { selectWatchlist } from '../../features/isLoggedIn/isLoggedInSlice';
 import { useSelector } from 'react-redux';
-import { Anime } from '../anime/Anime';
 import { WatchlistAnime } from '../anime/WatchlistAnime';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -18,7 +17,7 @@ export const WatchlistSlider = () => {
                 <h2>Watchlist</h2>
                 <div id={styles.divider}></div>
                 <Slider {...settings}>
-                    {animes.map(anime => <WatchlistAnime thumbnail={anime.thumbnail} title={anime.title} />)}
+                    {Object.keys(animes).map(anime => <WatchlistAnime thumbnail={animes[anime].thumbnail} title={animes[anime].title} key={animes[anime].title} />)}
                 </Slider>
             </div>
         </>

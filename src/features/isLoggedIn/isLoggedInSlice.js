@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+//To do: fix removeAnimeFromWatchlist
+
 import goku from '../../images/pfp/gokupfp.png';
 
 const isLoggedIn = createSlice({
@@ -8,7 +10,7 @@ const isLoggedIn = createSlice({
         loggedIn: false,
         name: '',
         pfp: goku,
-        watchlist: []
+        watchlist: {}
     },
     reducers: {
         logIn: (state, action) => {
@@ -19,10 +21,10 @@ const isLoggedIn = createSlice({
             state.pfp = action.payload;
         },
         addAnimeToWatchlist: (state, action) => {
-            state.watchlist = [...state.watchlist, action.payload];
+            state.watchlist[action.payload.title] = action.payload;
         },
         removeAnimeFromWatchlist: (state, action) => {
-            state.watchlist = state.watchlist.filter(anime => anime.title !== action.payload.title);
+            state.watchlist =  Object.keys(state.watchlist).filter(anime => anime !== action.payload.title);
         }
     }
 })
