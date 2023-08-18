@@ -21,7 +21,7 @@ export const Animes = ({ animes, loading }) => {
             {loading === undefined && <LoadingSkeleton />}
             <div className={styles.animesContainer}>
                 <Slider {...settings}>
-                    {loading === undefined ? <p id={styles.loadingBlank}></p> : animes.map(anime => <Anime key={anime.title} thumbnail={anime.images.jpg.large_image_url} synopsis={anime.synopsis} title={anime.title} />)}
+                    {loading === undefined ? <p id={styles.loadingBlank}></p> : animes.map(anime => <Anime key={anime.title} thumbnail={anime.images.jpg.large_image_url} synopsis={anime.synopsis} title={anime.title} genres={anime.genres} episodes={anime.episodes} trailer={anime.trailer.embed_url} />)}
                 </Slider>
             </div>
         </>

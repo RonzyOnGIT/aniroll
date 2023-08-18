@@ -8,13 +8,16 @@ export const ImageHeader = () => {
 
     const currentAnime = useSelector(selectCurrentAnime);
 
+
+
     return (
 
         <>
-            <div className={styles.headerContainer} style={{backgroundImage: `url(${currentAnime.thumbnail})`}}>
-                <div className={styles.imageWrapper}>
-                    <img src={currentAnime.thumbnail} />
-                </div>
+            <div className={styles.singleShowContainer} style={{backgroundImage: `url(${currentAnime.thumbnail})`}}>
+                <div className={styles.colorOverlay}></div>
+                {/* <div className={styles.imageWrapper}>
+                    <img id={styles.imageHeader} src={currentAnime.thumbnail} />
+                </div> */}
             </div>
         </>
     )

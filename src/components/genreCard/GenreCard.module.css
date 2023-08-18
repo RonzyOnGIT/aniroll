@@ -1,0 +1,12 @@
+.cardWrapper {
+    border-radius: 3px;
+    height: 30px;
+    width: 110px;
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: var(--body-color2);
+    font-size: 14px;
+}

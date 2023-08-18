@@ -17,7 +17,7 @@ export const HomeSection = ({ title, endPoint }) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchAnimesForSection(endPoint))
+        dispatch(fetchAnimesForSection(endPoint));
     }, [])
 
     return(

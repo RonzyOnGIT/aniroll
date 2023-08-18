@@ -6,7 +6,8 @@ import { addAnimeToWatchlist, removeAnimeFromWatchlist, selectWatchlist, switchC
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
-export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
+export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered, trailer, episodes, genres }) => {
+
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ export const AnimeCardFlipped = ({ title, thumbnail, synopsis, isHovered }) => {
     }
 
     const navigateToSingleAnimePage = () => {
-        dispatch(switchCurrentAnime({title: title, thumbnail: thumbnail, synopsis: synopsis}));
+        dispatch(switchCurrentAnime({title: title, thumbnail: thumbnail, synopsis: synopsis, trailer: trailer, episodes: episodes, genres: genres}));
         navigate(`series/${title}`);
     }
 
