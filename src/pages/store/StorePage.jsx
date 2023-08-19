@@ -4,7 +4,9 @@ export const StorePage = () => {
 
     return (
         <>
-            <h1>store page</h1>
+            <div className={styles.storePageContainer}>
+                <h1>Store Page</h1>
+            </div>
         </>
     )
 }

@@ -1,0 +1,13 @@
+.newsPageContainer {
+    margin-top: 65px;
+    padding-top: 30px;
+    background-color: var(--body-color);
+    color: white;
+}
+
+.newsPageContainer h1 {
+    width: 90%;
+    margin: auto;
+}
+
+

@@ -1,10 +1,12 @@
-import stlyes from './NewsPage.module.css';
+import styles from './NewsPage.module.css';
 
 export const NewsPage = () => {
 
     return (
         <>
-            <h1>News Page</h1>
+            <div className={styles.newsPageContainer}>
+                <h1>Hot Anime News</h1>
+            </div>  
         </>
     )
 }
