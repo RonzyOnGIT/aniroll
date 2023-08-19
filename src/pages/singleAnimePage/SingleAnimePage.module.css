@@ -79,14 +79,20 @@
     height: 50%;
     margin: auto;
     flex-wrap: wrap;
-
 }
 
 #trailerWrapper {
     border: none;
     width: 100%;
-    height: 70%;
+    height: 60%;
 }
+
+#noTrailerGif {
+    width: 300px;
+    height: 260px;
+    position: relative;
+}
+
 
 @media screen and (max-width: 1110px) {
 
@@ -101,6 +107,7 @@
         width: 100%;
         height: 50%;
         padding-top: 10px;
+        gap: 10px;
     }
 
     .info.right {
@@ -128,17 +135,71 @@
         gap: 10px;
     }
 
+    .info.left {
+        align-items: center;
+    }
+
     #synopsis {
         font-size: 13px;
     }
 
     .infoContainer {
-        gap: 10px;
+        gap: 20px;
     }
 
     #trailerWrapper {
         width: 100%;
     }
 
+    .genreCardContainer {
+        width: 75%;
+    }
+
+    #noTrailerGif {
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+ 
 
 }
+
+
+@media screen and (max-width: 480px) {
+
+    .info.left {
+        height: 60%;
+    }
+
+    .info.right {
+        height: 40%;
+    }
+
+    .infoContainer {
+        height: 1200px;
+        gap: 40px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .info.left {
+        height: 70%;
+    }
+
+    .info.right {
+        height: 30%;
+    }
+
+    .genreCardContainer {
+        width: 95%;
+    }
+
+    .infoContainer {
+        gap: 60px;
+    }
+
+
+}
+

@@ -10,3 +10,11 @@
     background-color: var(--body-color2);
     font-size: 14px;
 }
+
+
+@media screen and (max-width: 720px) {
+
+    .cardWrapper {
+        margin: auto;
+    }
+}

@@ -25,7 +25,7 @@ export const SingleAnimePage = () => {
                     <div className={`${styles.info} ${styles.right}`}>
                         {currentAnime.trailer
                         ? <iframe id={styles.trailerWrapper} src={currentAnime.trailer}></iframe>
-                        : <img src={noTrailerGif} />
+                        : <img id={styles.noTrailerGif} src={noTrailerGif} />
                         }
                     </div>
                 </div>
