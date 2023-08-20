@@ -1,11 +1,12 @@
 import styles from './StorePage.module.css';
+import bluray from '../../images/banners/bluray3.webp';
 
 export const StorePage = () => {
 
     return (
         <>
             <div className={styles.storePageContainer}>
-                <h1>Store Page</h1>
+                <img id={styles.shopBanner} src={bluray} />
             </div>
         </>
     )
