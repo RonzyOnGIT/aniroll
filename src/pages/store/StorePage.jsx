@@ -6,7 +6,9 @@ export const StorePage = () => {
     return (
         <>
             <div className={styles.storePageContainer}>
-                <img id={styles.shopBanner} src={bluray} />
+                <div className={styles.shopBannerWrapper}>
+                    <img id={styles.shopBanner} src={bluray} />
+                </div>
             </div>
         </>
     )
