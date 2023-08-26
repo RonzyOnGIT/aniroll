@@ -1,0 +1,16 @@
+.categoriesContainer {
+    padding: 40px 0 20px;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .categoriesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

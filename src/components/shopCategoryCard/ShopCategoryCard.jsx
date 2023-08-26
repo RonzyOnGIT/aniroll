@@ -7,7 +7,7 @@ export const ShopCategoryCard = ({ image, category }) => {
 
         <>
             <div className={styles.categoryCardContainer}>
-                <img src={image} />
+                <img id={styles.image} src={image} />
                 <p>{category}</p>
             </div>
         </>

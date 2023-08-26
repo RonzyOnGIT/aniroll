@@ -21,4 +21,12 @@ export const categoryItems = [
         image:  gokuDriving,
         category: 'On Sale'
     },
+    {
+        image:  gokuDriving,
+        category: 'Figures Under $30'
+    },
+    {
+        image:  gokuDriving,
+        category: 'Dragon Ball'
+    },
 ];

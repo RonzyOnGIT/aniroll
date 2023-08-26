@@ -1,0 +1,10 @@
+.categoryCardContainer {
+    text-align: center;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+

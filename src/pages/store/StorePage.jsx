@@ -9,8 +9,8 @@ export const StorePage = () => {
             <div className={styles.storePageContainer}>
                 <div className={styles.shopBannerWrapper}>
                     <img id={styles.shopBanner} src={bluray} />
-                    <ShopCategoryCards />
                 </div>
+                <ShopCategoryCards />
             </div>
         </>
     )
