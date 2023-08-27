@@ -8,7 +8,7 @@ export const ShopCategoryCards = () => {
 
         <>
             <div className={styles.categoriesContainer}>
-                {categoryItems.map(category => <ShopCategoryCard image={category.image} category={category.category} />)}
+                {categoryItems.map(category => <ShopCategoryCard image={category.image} category={category.category} key={category.category} />)}
             </div>
         </>
     )

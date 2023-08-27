@@ -14,3 +14,17 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+@media screen and (max-width: 460px) {
+    
+    .categoriesContainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 230px) {
+    .categoriesContainer {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
