@@ -2,9 +2,7 @@ import styles from './ShopCategoryCard.module.css';
 import { useNavigate } from 'react-router-dom';
 
 
-export const ShopCategoryCard = ({ image, category, isWide }) => {   
-    
-    const navigate = useNavigate();
+export const ShopCategoryCard = ({ image, category }) => {    
 
     return (
 
