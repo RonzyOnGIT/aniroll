@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 export const ShopCategoryCard = ({ image, category }) => {    
 
+    const navigate = useNavigate();
+
     return (
 
         <>
