@@ -1,7 +1,7 @@
 import styles from './ShopCategoryCard.module.css';
 
 
-export const ShopCategoryCard = ({ image, category, isWide }) => {    
+export const ShopCategoryCard = ({ image, category }) => {    
 
     return (
 
