@@ -1,5 +1,4 @@
 .categoryCardContainer {
-    background-color: white;
     color: black;
     border-radius: 6px;
     display: flex;
@@ -8,7 +7,7 @@
     width: 25%;
     height: 48%;
     position: relative;
-    background-color: rgb(75, 60, 60);
+    background-color: #202020;
     cursor: pointer;
 }
 
@@ -22,7 +21,7 @@
 
 }
 
-#categoryHeader {
+.categoryHeader {
     position: absolute;
     bottom: 0;
     border-bottom-left-radius: 6px;
@@ -32,6 +31,15 @@
     padding: 1rem;
     font-weight: 500;
     background-color: var(--red-color);
+}
+
+.skeleton {
+    background-color: #202020;
+    color: #202020;
+}
+
+#imagePlaceholder {
+    display: none;
 }
 
 @media screen and (max-width: 780px) {
