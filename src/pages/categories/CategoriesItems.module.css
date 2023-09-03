@@ -1,8 +1,10 @@
 .categoriesItemsContainer {
     margin-top: 65px;
+    padding-top: 10px;
 }
 
 #backButton {
     padding: 0.6 1.2rem;
     border-radius: 5px;
+    margin: 0;
 }
