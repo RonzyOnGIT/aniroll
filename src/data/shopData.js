@@ -1,4 +1,6 @@
 import gokuDriving from '../images/backgrounds/0821_NSF.webp';
+import shirt from '../images/backgrounds/merchCat2.webp';
+import mitsu from '../images/backgrounds/mitsuCat.webp';
 
 export const categoryItems = [
     {
@@ -6,7 +8,7 @@ export const categoryItems = [
         category: 'Non-Scale Figures'
     },
     {
-        image: gokuDriving,
+        image: shirt,
         category: 'Merch'
     },
     {
@@ -22,8 +24,8 @@ export const categoryItems = [
         category: 'On Sale'
     },
     {
-        image:  gokuDriving,
-        category: 'Figures Under $30'
+        image:  mitsu,
+        category: 'Nendoroid'
     },
     {
         image:  gokuDriving,
