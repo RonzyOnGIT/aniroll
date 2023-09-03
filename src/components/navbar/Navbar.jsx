@@ -21,9 +21,9 @@ export const Navbar = () => {
                 <NavLink to='/'><p id={styles.logoSmall}>aniroll</p></NavLink>
                 <ul className={isHamburgerClicked ? `${styles.list} ${styles.active}` : styles.list}>
                     <NavLink to='/'><p id={styles.logo}>aniroll</p></NavLink>
-                    <NavLink to='categories' >Categories</NavLink>
-                    <NavLink to='news' >News</NavLink>
-                    <NavLink to='store' >Shop</NavLink>
+                    <NavLink to='categories' onClick={toggleHamburger}>Categories</NavLink>
+                    <NavLink to='news' onClick={toggleHamburger}>News</NavLink>
+                    <NavLink to='store' onClick={toggleHamburger}>Shop</NavLink>
                 </ul>
                 <div className={styles.userIconContainer}>
                     <NavLink to='account'><img id={isLoggedIn ? styles.customIcon : styles.userIcon} src={isLoggedIn ? currentPfp : userIcon} /></NavLink>
