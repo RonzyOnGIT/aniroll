@@ -1,0 +1,13 @@
+.productContainer {
+    width: 100%;
+}
+
+#productImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productContainer h4 {
+    text-align: center;
+}

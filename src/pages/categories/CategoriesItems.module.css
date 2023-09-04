@@ -1,10 +1,25 @@
 .categoriesItemsContainer {
     margin-top: 65px;
-    padding-top: 10px;
+    padding: 30px 5% 10px;
 }
 
 #backButton {
     padding: 0.6 1.2rem;
     border-radius: 5px;
     margin: 0;
+}
+
+.products {
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+@media screen and (max-width: 920px) {
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
 }

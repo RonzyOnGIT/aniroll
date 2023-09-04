@@ -23,7 +23,9 @@ export const CategoriesItems = () => {
             <div className={styles.categoriesItemsContainer}>
                 <button id={styles.backButton} onClick={() => navigate('/store')}>Go Back</button>
                 <h1>Shop {category}</h1>
-                {filteredInventory ? filteredInventory.map(product => <Product category={product.category} key={product.category} image={product.image} />) : <p>Loading...</p>}
+                <div className={styles.products}>
+                    {filteredInventory ? filteredInventory.map(product => <Product category={product.category} key={product.category} image={product.image} />) : <p>Loading...</p>}
+                </div>
             </div>
         </>
     )
