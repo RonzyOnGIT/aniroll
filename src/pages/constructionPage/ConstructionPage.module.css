@@ -1,0 +1,6 @@
+.constructionPageContainer {
+    height: 100vh;
+    margin-top: 65px;
+    background-color: var(--body-color);
+    text-align: center;
+}
