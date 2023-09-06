@@ -1,6 +1,41 @@
 .constructionPageContainer {
     height: 100vh;
-    margin-top: 65px;
     background-color: var(--body-color);
     text-align: center;
+    position: relative;
+    margin-top: -30px;
+    padding-top: 100px;
+}
+
+
+#animeChar {
+    width: 17%;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .constructionPageContainer {
+        padding-top: 200px;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #animeChar {
+        width: 30%;
+    }
+
+    .constructionPageContainer {
+        padding-top: 120px;
+
+    }
+
+    .constructionPageContainer h1 {
+        font-size: 30px;
+    }
 }
