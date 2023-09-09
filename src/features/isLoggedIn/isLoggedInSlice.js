@@ -1,8 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-//To do: fix removeAnimeFromWatchlist
-//issue to fix: when removing anime from watchlist, only the titles of the animes remain
-
 import goku from '../../images/pfp/gokupfp.png';
 
 const isLoggedIn = createSlice({
@@ -23,7 +20,6 @@ const isLoggedIn = createSlice({
             state.pfp = action.payload;
         },
         addAnimeToWatchlist: (state, action) => {
-            //action.payload is an object of the anime
             state.watchlist[action.payload.title] = action.payload;
         },
         removeAnimeFromWatchlist: (state, action) => {
