@@ -25,3 +25,16 @@
 #noImage {
     display: none;
 }
+
+@media screen and (max-width: 480px) {
+
+    .watchlistWrapper {
+        width: 40vw;
+        height: 50vh;
+        margin: 0 10px;
+    }
+
+    #animeCover {
+        height: 35vh;
+    }
+}
