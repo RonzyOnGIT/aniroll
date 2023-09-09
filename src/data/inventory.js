@@ -3,6 +3,7 @@ import mai from '../images/products/maiFigure2.webp';
 import shirt from '../images/products/narutoPro.webp';
 import chainsawHat from '../images/products/chainHatProd.webp';
 import stocking from '../images/products/stockProduct.webp';
+import bocchi from '../images/products/bocchi.webp';
 
 export const inventory = [
     {
@@ -57,15 +58,15 @@ export const inventory = [
     },
     {
         category: 'New Pre-Orders',
-        image: stocking
+        image: bocchi
     },
     {
         category: 'New Pre-Orders',
-        image: stocking
+        image: bocchi
     },
     {
         category: 'New Pre-Orders',
-        image: stocking
+        image: bocchi
     },
     {
         category: 'Accessories',

@@ -3,6 +3,7 @@ import shirt from '../images/backgrounds/merchCat2.webp';
 import mitsu from '../images/backgrounds/mitsuCat.webp';
 import mugen from '../images/backgrounds/champ.webp';
 import hat from '../images/backgrounds/chainHat.webp';
+import bocchi from '../images/backgrounds/preCat.webp';
 
 export const categoryItems = [
     {
@@ -14,7 +15,7 @@ export const categoryItems = [
         category: 'Merch'
     },
     {
-        image: gokuDriving,
+        image: bocchi,
         category: 'New Pre-Orders'
     },
     {
