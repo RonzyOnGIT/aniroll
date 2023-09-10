@@ -38,94 +38,117 @@ export const inventory = [
     },
     {
         category: 'Merch',
-        image: shirt
+        image: shirt,
+        title: 'Naruto Shirt'
     },
     {
         category: 'Merch',
-        image: shirt
+        image: shirt,
+        title: 'Naruto Shirt'
     },
     {
         category: 'Merch',
-        image: shirt
+        image: shirt,
+        title: 'Naruto Shirt'
     },
     {
         category: 'Merch',
-        image: shirt
+        image: shirt,
+        title: 'Naruto Shirt'
     },
     {
         category: 'Merch',
-        image: shirt
+        image: shirt,
+        title: 'Naruto Shirt'
     },
     {
         category: 'New Pre-Orders',
-        image: bocchi
+        image: bocchi,
+        title: 'Bocchi Figure',
+        title: 'Bocchi Figure'
     },
     {
         category: 'New Pre-Orders',
-        image: bocchi
+        image: bocchi,
+        title: 'Bocchi Figure'
     },
     {
         category: 'New Pre-Orders',
-        image: bocchi
+        image: bocchi,
+        title: 'Bocchi Figure'
     },
     {
         category: 'Accessories',
-        image: chainsawHat
+        image: chainsawHat,
+        title: 'Pochita Cap'
     },
     {
         category: 'Accessories',
-        image: chainsawHat
+        image: chainsawHat,
+        title: 'Pochita Cap'
     },
     {
         category: 'Accessories',
-        image: chainsawHat
+        image: chainsawHat,
+        title: 'Pochita Cap'
     },
     {
         category: 'On Sale',
         image: stocking,
+        title: 'On Sale'
         
     },
     {
         category: 'On Sale',
         image: stocking,
+        title: 'On Sale'
         
     },
     {
         category: 'On Sale',
         image: stocking,
+        title: 'On Sale'
         
     },
     {
         category: 'On Sale',
         image: stocking,
+        title: 'On Sale'
         
     },
     {
         category: 'Nendoroid',
-        image: mitsuri
+        image: mitsuri,
+        title: 'Mitsuri'
     },
     {
         category: 'Nendoroid',
-        image: mitsuri
+        image: mitsuri,
+        title: 'Mitsuri'
     },
     {
         category: 'Nendoroid',
-        image: mitsuri
+        image: mitsuri,
+        title: 'Mitsuri'
     },
     {
         category: 'Nendoroid',
-        image: mitsuri
+        image: mitsuri,
+        title: 'Mitsuri'
     },
     {
         category: 'Dragon Ball',
-        image: stocking
+        image: stocking,
+        title: 'Goku'
     },
     {
         category: 'Dragon Ball',
-        image: stocking
+        image: stocking,
+        title: 'Goku'
     },
     {
         category: 'Dragon Ball',
-        image: stocking
+        image: stocking,
+        title: 'Goku'
     }
 ];
