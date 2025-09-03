@@ -1,0 +1,32 @@
+.newsCardContainer {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.skeleton {
+    padding-left: 100%;
+    padding-top: 100%;
+    background-color: var(--skeleton-color);
+}
+
+#image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#text {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+#placeholderImage {
+    display: none;
+}
+
