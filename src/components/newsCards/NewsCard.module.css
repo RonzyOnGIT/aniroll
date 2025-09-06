@@ -2,6 +2,7 @@
     text-align: center;
     position: relative;
     cursor: pointer;
+    border: 2px solid red;
 }
 
 .skeleton {
@@ -28,5 +29,15 @@
 
 #placeholderImage {
     display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #text {
+        padding: 5px;
+        border: 2px solid blue;
+        font-size: .7rem;
+    }
 }
 

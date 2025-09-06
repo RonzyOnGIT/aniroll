@@ -5,10 +5,13 @@
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    height: 100%;
+    border: 2px solid red;
+    align-items: start;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
     .newsContainer {
         grid-template-columns: repeat(2, 1fr);
